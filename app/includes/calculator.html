@@ -1,0 +1,104 @@
+<div class="row calculator">
+    <div class="col-lg-10 col-lg-offset-1">
+        <h2 class="aligncenter">Калькулятор услуг</h2>
+        <div class="row">
+            <div class="col-lg-3">
+                <form action="">
+                    <h4>Устройство</h4>
+                    <select class="form-control" id="devices">
+                        <option id="laptop">Ноутбук HP 2404</option>
+                        <option id="server">Сервер</option>
+                        <option id="printer">Принтер</option>
+                    </select>
+                    <div class="checkbox"><label class="custom-check">
+                            <input type="checkbox" id="ucen" value="" checked>
+                            <span>Уцененное устройство</span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <h4>Количество</h4>
+                        <input type="text" class="form-control" id="amount" placeholder="1" value="1">
+                    </div>
+                    <div class="form-group">
+                        <h4>Срок аренды, мес.</h4>
+                        <input type="text" class="form-control" id="rent-term" placeholder="1" value="2">
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3">
+                <h4>Обслуживание</h4>
+                <div class="checkbox">
+                    <label class="custom-check">
+                        <input type="checkbox" id="services" value="" checked>
+                        <span>Включено</span>
+                    </label>
+                </div>
+
+                <h4>Удаленность</h4>
+                <div class="form-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="optionsLOC" id="service" checked>
+                        <span>Ремонт в сервисном центре</span>
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="optionsLOC" id="minskCity">
+                        <span>Минск, самовывоз из СЦ</span>
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="optionsLOC" id="minskClient">
+                        <span>Минск, ремонт у клиента</span>
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="optionsLOC" id="minskDistrict">
+                        <span>Минский район, самовывоз из СЦ</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <h4>Сроки реагирования</h4>
+                    <label class="custom-radio">
+                        <input type="radio" name="optionsSLA" id="threeDays" checked>
+                        <span>3 рабочих дня</span>
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="optionsSLA" id="oneDay">
+                        <span>1 рабочий день</span>
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="optionsSLA" id="oneCalendarDay">
+                        <span>1 календарный день</span>
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="optionsSLA" id="fourHoursWeek">
+                        <span>4 часа (8 часов × 5 дней)</span>
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="optionsSLA" id="fourHoursAllDay">
+                        <span>4 часа (24 часа × 7 дней)</span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h4>Стоимость услуги</h4>
+                <p id="cost"><span>Сумма арендованного оборудования: </span>0<span> рублей</span></p>
+                <p id="sale"><span>Скидка от объема: </span>0<span>%</span></p>
+                <p id="total-price"><span>Сумма ежемесячного платежа: </span>0<span> рублей</span></p>
+                <button class="btn btn-info" id="add-item">Добавить в расчет</button>
+
+                <h4><span>Общая стоимость услуг</h4>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Оборудование</th>
+                            <th>Количество</th>
+                            <th>Срок аренды</th>
+                            <th>Стоимость</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                </table>
+                <h3 id="total-cost">Итого: <span>…</span> рублей</h3>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,482 @@
+/*!
+autor: Karasik Vadim
+project: yitechnology
+*/
+
+@import "import/_reset.less";
+@import "import/_fonts.less";
+@color-head: #6a7e8e;
+@color-darkhead: #2c2c2c;
+@bg-gray: #f6f6f6;
+body {
+    font-size: 62.5%;
+    font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
+    color: #6a7e8e;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Montserrat-Medium', Arial, Helvetica, sans-serif;
+    font-size: 600%;
+    margin-bottom: 5px;
+    line-height: 1;
+    color: @color-head;
+    @media(max-width: 768px) {
+        font-size: 300%;
+    }
+}
+
+h2 {
+    font-family: 'Montserrat-Medium', Arial, Helvetica, sans-serif;
+    font-size: 400%;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: @color-head;
+    @media(max-width: 768px) {
+        font-size: 270%;
+    }
+}
+
+h3 {
+    font-family: "Montserrat-Regular", Arial, Helvetica, sans-serif;
+    font-size: 250%;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-family: "Montserrat-Regular", Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    line-height: 1.1;
+    margin-bottom: 8px;
+}
+
+p {
+    font-family: "Montserrat-Regular";
+    margin-bottom: 20px;
+    font-size: 160%;
+    line-height: 1.35;
+}
+
+header {
+    padding: 30px 0 30px 0;
+    background: @bg-gray;
+    .text {
+        margin: 100px 0 0;
+    }
+    .logo {
+        display: inline-block;
+        width: 200px;
+    }
+    nav {
+        clear: both;
+        ul {
+            line-height: 2.7;
+            float: right;
+            li {
+                display: inline-block;
+                a {
+                    padding: 5px 10px;
+                    font-size: 160%;
+                    text-transform: uppercase;
+                    font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
+                    color: #6a7e8e;
+                    &:hover {
+                        text-decoration: none;
+                        color: #4191cf;
+                    }
+                    @media(max-width: 768px) {
+                        font-size: 110%;
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+    }
+    p {
+        color: #4191cf;
+        font-size: 300%;
+        font-family: 'Montserrat-Light', Arial, Helvetica, sans-serif;
+        margin-bottom: 50px;
+        @media(max-width: 768px) {
+            font-size: 200%;
+        }
+    }
+    img {
+        max-width: 100%;
+    }
+}
+
+.haas {
+    padding: 100px 0;
+    img {
+        max-width: 80%;
+    }
+}
+
+.problems {
+    padding: 100px 0;
+    background: @bg-gray;
+    .problem {
+        padding: 25px;
+        img {
+            padding-bottom: 10px;
+        }
+    }
+    h2 {
+        margin-bottom: 50px;
+    }
+    h3 {
+        color: @color-darkhead;
+    }
+}
+
+.advantages {
+    .item {
+        padding: 25px;
+        img {
+            padding-bottom: 10px;
+        }
+    }
+    h3 {
+        color: @color-darkhead;
+        font-size: 200%;
+    }
+}
+
+.costs {
+    padding: 70px 0;
+    h2 {
+        margin: 0 0 20px 0;
+    }
+    h3 {
+        color: @color-darkhead;
+        font-size: 300%;
+    }
+    .gartner {
+        padding-bottom: 50px;
+        font-size: 250%;
+        color: #4191cf;
+        font-family: 'Montserrat-Light', Arial, Helvetica, sans-serif;
+    }
+}
+
+.advantages {
+    background: @bg-gray;
+    padding: 100px 0;
+    .row {
+        h3 {
+            @media(max-width: 768px) {
+                font-size: 200%;
+            }
+        }
+    }
+}
+
+.plans {
+    padding: 70px 0;
+    h2 {
+        margin-bottom: 50px;
+    }
+    .item {
+        padding: 30px 10px 10px 10px;
+        background: @bg-gray;
+        text-align: center;
+        height: 100%;
+        .price {
+            font-size: 300%;
+            font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
+            @media(max-width: 1340px) {
+                font-size: 230%;
+            }
+        }
+        h3 {
+            color: #4191cf;
+        }
+        ul {
+            li {
+                padding: 10px 0;
+                font-size: 160%;
+                line-height: 1.4;
+                min-height: 65px;
+                border-bottom: 1px solid #ffffff;
+                &:last-child {
+                    border: none;
+                }
+            }
+            .empty {
+                background: #ffeeee;
+            }
+        }
+    }
+    .calc {
+        font-size: 150%;
+        margin: 20px 5px;
+        line-height: 1.2;
+    }
+}
+
+.extra-info {
+    padding: 0 0 50px;
+    img {
+        padding-bottom: 10px;
+    }
+}
+
+.payment {
+    padding: 70px 0;
+    background: @bg-gray;
+}
+
+.models {
+    h2 {
+        text-align: center;
+    }
+    padding: 70px 0;
+    .model {
+        text-align: center;
+    }
+}
+
+.warranty {
+    padding: 70px 0;
+    background: #eaeff5;
+}
+
+.about-us {
+    padding: 70px 0;
+    &-item {
+        padding: 0 20px;
+    }
+    img {
+        margin-bottom: 20px;
+    }
+}
+
+.ecology {
+    padding: 70px 0;
+    background: #3aa14e;
+    color: #ffffff;
+}
+
+.ask-question {
+    padding: 50px 0;
+    background: #4191CF;
+    h2 {
+        color: #ffffff;
+    }
+    p {
+        color: #ffffff;
+    }
+    img {
+        padding: 0 10px;
+        float: left;
+    }
+    button {
+        float: right;
+    }
+    a {
+        color: #fff;
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+footer {
+    padding: 50px 0;
+    background: @bg-gray;
+    li {
+        font-size: 160%;
+        line-height: 1.5;
+        span {
+            font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
+        }
+    }
+    p {
+        font-size: 120%;
+    }
+}
+
+.align {
+    &center {
+        text-align: center;
+    }
+    &left {
+        text-align: left;
+    }
+    &right {
+        text-align: right;
+    }
+}
+
+.callback {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 4px;
+    color: #ffffff;
+    font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
+    font-size: 180%;
+    &.bordered {
+        border: 2px solid #ffffff;
+        background: transparent;
+    }
+    &.fill {
+        border: none;
+        background: #4191CF;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    form {
+        position: absolute;
+        max-width: 350px;
+        padding: 50px;
+        top: 20%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: #ffffff;
+        border-radius: 4px;
+    }
+    input {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 160%;
+    }
+    .close {
+        position: absolute;
+        right: 5%;
+        top: 5%;
+    }
+    button {
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
+
+// Калькулятор
+.calculator {
+    background: @bg-gray;
+    padding: 70px 0;
+
+    p{
+        margin-bottom: 0;
+        font-size: 150%;
+    }
+
+    #total-cost{
+        float: right;
+    }
+
+    #add-item{
+        margin: 20px 0;
+    }
+
+    select{
+        margin-bottom: 15px;
+    }
+
+    input[type="radio"] {
+        opacity: 0;
+        display: none;
+    }
+    label.custom-radio span {
+        position: relative;
+        padding-left: 25px;
+    }
+    label.custom-radio span:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        border: 2px solid #4191cf;
+        border-radius: 50%;
+    }
+    input[type="radio"]:checked+span:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        background: #4191cf;
+        transform: scale(0.5);
+        border-radius: 50%;
+    }
+    .custom-radio {
+        display: block;
+    }
+    /********************************/
+    label{
+        font-size: 150%;
+        margin: 5px 0;
+
+    }
+    .checkbox label, .radio label{
+        padding-left: 0;
+
+    }
+    input[type="checkbox"] {
+        opacity: 0;
+    }
+    label.custom-check span {
+        position: relative;
+        padding-left: 25px;
+    }
+    label.custom-check span:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        border: 2px solid #4191cf;
+        border-radius: 5%;
+    }
+    input[type="checkbox"]:checked+span:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        background: #4191cf;
+        transform: scale(0.5);
+        border-radius: 5%;
+    }
+    .custom-check {
+        display: block;
+    }
+
+    tr td, tr th{
+        text-align: center;
+    }
+    .del {
+        display: inline-block;
+        background: #ff4c4c;
+        padding: 2px 10px;
+        border-radius: 3px;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+//Extra small devices Phones (<768px)	
+//Small devices Tablets (≥768px)	
+//Medium devices Desktops (≥992px)	
+//Large devices Desktops (≥1200px)
